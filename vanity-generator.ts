@@ -22,7 +22,7 @@ while (true) {
     console.log(`🔁 Кількість спроб: ${attempts}`);
 
     // Записуємо ключі в .env
-    const privateKey = keypair.secretKey.toString('base58');
+    const privateKey = keypair.secretKey.toString();//'base58'
     const publicKey = pubkey;
     const envData = `PRIVATE_KEY=${privateKey}\nPUBLIC_KEY=${publicKey}\n`;
 
